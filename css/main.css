@@ -1,0 +1,42 @@
+body header {
+  background-image: url("https://github.com/Neuromatica/korotkov/raw/master/img/i_main.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+body header .col-md-6 {
+  padding-top: 30%;
+  color: white;
+}
+
+body header .col-md-6 #r1 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+body header .col-md-6 #r1 i {
+  margin: 5px;
+}
+
+body header .col-md-6 #r2 {
+  padding-left: 100px;
+  padding-bottom: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  font-family: 'Play', sans-serif;
+}
+
+body header .col-md-6 #r2 h1 {
+  letter-spacing: -3px;
+  font-size: 500%;
+  margin: 0px;
+}
+
+body header .col-md-6 #r2 h3 {
+  letter-spacing: 5px;
+  font-size: 200%;
+  margin: 0px;
+  margin-left: 150px;
+}
