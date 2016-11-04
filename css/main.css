@@ -65,6 +65,7 @@ body #social i {
   margin: 15px;
   color: white;
   -webkit-animation-delay: 0.2s;
+  -webkit-animation-duration: 0.6s;
 }
 
 body #present {
