@@ -61,6 +61,6 @@ $.fn.extend({
 });
 
 //$("#popen").click(function() {
-//
+//s
 //	$(this).closest('body').find('header').hide();
 //});
