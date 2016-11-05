@@ -4,6 +4,7 @@ var sw = $(window).clientWidth;
 var sh = $(window).height();
 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 $page.find('#social').hide();
+$page.find('#rp1').hide();
 $('header').css('width', sw+'px');
 $('header').css('height', sh+'px');
 $('#present').css('height', sh+'px');
@@ -28,16 +29,14 @@ $("i").hover(
 window.onscroll = function() {
 	if ($(window).height() <= $(document).scrollTop()) {
 		$page.find('#social').show();
-		$('#social').removeClass("animated fadeOutRight");
+		$page.find('#rp1').show();
+		$page.find('header').hide();
+		window.scrollTo(0, 0);
 		$('#social').addClass("animated fadeInRight");
-		$('#social').find('i').removeClass("animated fadeOutRight");
 		$('#social').find('i').addClass("animated fadeInRight");
-	}
-	if ($(window).height() > $(document).scrollTop()) {
-		$('#social').removeClass("animated fadeInRight");
-		$('#social').addClass("animated fadeOutRight");
-		$('#social').find('i').removeClass("animated fadeInRight");
-		$('#social').find('i').addClass("animated fadeOutRight");
+		$('#rp1t1').addClass("animated fadeInDown");
+		$('#rp1hr').addClass("animated fadeInLeft");
+		$('#rp1t2').addClass("animated fadeInUp");
 	}
 }
 
