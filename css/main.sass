@@ -2,9 +2,12 @@ $c_bg: #1a2434
 $c_tx: #ffffff
 
 body
+	background: $c_bg
+	font-family: 'Cuprum', sans-serif;
 	header
 		background-image: url("https://raw.githubusercontent.com/Neuromatica/korotkov.github.io/master/img/i_main.JPG")
 		background-repeat: no-repeat
+		background-position: 0px 0px
 		background-size: 100%
 		h4
 			padding-top: 50%
@@ -27,7 +30,6 @@ body
 				padding-left: 100px
 				padding-bottom: 20px
 				background: rgba(0, 0, 0, 0.3)
-				font-family: 'Play', sans-serif
 				h1
 					letter-spacing: -3px
 					font-size: 500%
@@ -40,31 +42,138 @@ body
 	#social
 		position: fixed
 		bottom: 30%
-		left: 96%
+		margin-left: 100px
+		width: 60px
 		text-align: center
-		background: rgba(255, 255, 255, 0.1)
+		background: #4ca9b6; /* Old browsers */
+		background: -moz-linear-gradient(top, #4ca9b6 0%, #008597 100%); /* FF3.6-15 */
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(76, 169, 182, 0.8)), to(rgba(0, 133, 151, 0.8))); /* Chrome4-9,Safari4-5 */
+		background: -webkit-linear-gradient(top, #4ca9b6 0%,#008597 100%); /* Chrome10-25,Safari5.1-6 */
+		background: -o-linear-gradient(top, #4ca9b6 0%,#008597 100%); /* Opera 11.10-11.50 */
+		background: -ms-linear-gradient(top, #4ca9b6 0%,#008597 100%); /* IE10 preview */
+		background: linear-gradient(to bottom, rgba(76, 169, 182, 0.8) 0%, rgba(0, 133, 151, 0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ca9b6', endColorstr='#008597',GradientType=0 ); /* IE6-9 */
 		-webkit-animation-duration: 0.4s
 		i
 			font-size: 250%
-			margin: 15px
+			margin-top: 13px; margin-left: 2px; margin-right: 2px; margin-bottom: 13px;
 			color: white
 			-webkit-animation-delay: 0.2s
 			-webkit-animation-duration: 0.6s
-	#present
+	#about
 		background: $c_bg
 		color: white
 		#rpp
 			margin-top: -60px
+			margin-bottom: 40px
 			text-align: center
 		#rp1
 			padding-top: 20px
 			text-align: center
 			#rp1t2
-				-webkit-animation-delay: 0.6s
+				-webkit-animation-delay: 0.4s
 			#rp1hr
 				width: 30%
-				-webkit-animation-delay: 0.3s
-				-webkit-animation-duration: 1.4s
+				-webkit-animation-delay: 0.2s
+				-webkit-animation-duration: 1.2s
+
+
+
+
+
+		ul
+			text-align: center
+			margin-bottom: 0
+			padding-left: 15px
+			li
+				margin-bottom: 15px
+				width: 180px
+				display: inline-block
+				margin-right: 15px
+				list-style: outside none none
+				a
+					border: 3px solid #FFF
+					border-radius: 3px
+					display: block
+					overflow: hidden
+					position: relative
+					float: left
+					img
+						-webkit-transition: -webkit-transform 0.15s ease 0s
+						-moz-transition: -moz-transform 0.15s ease 0s
+						-o-transition: -o-transform 0.15s ease 0s
+						transition: transform 0.15s ease 0s
+						-webkit-transform: scale3d(1, 1, 1)
+						transform: scale3d(1, 1, 1)
+						height: 100%
+						width: 100%
+					.demo-gallery-poster
+						background-color: rgba(0, 0, 0, 0.1)
+						bottom: 0
+						left: 0
+						position: absolute
+						right: 0
+						top: 0
+						-webkit-transition: background-color 0.15s ease 0s
+						-o-transition: background-color 0.15s ease 0s
+						transition: background-color 0.15s ease 0s
+					.demo-gallery-poster > img
+						left: 50%
+						margin-left: -10px
+						margin-top: -10px
+						opacity: 0
+						position: absolute
+						top: 50%
+						-webkit-transition: opacity 0.3s ease 0s
+						-o-transition: opacity 0.3s ease 0s
+						transition: opacity 0.3s ease 0s
+						width: 20px
+						height: 20px
+				a:hover > img
+					-webkit-transform: scale3d(1.1, 1.1, 1.1)
+					transform: scale3d(1.1, 1.1, 1.1)
+				a:hover .demo-gallery-poster > img
+					opacity: 1
+				a:hover .demo-gallery-poster
+					background-color: rgba(0, 0, 0, 0.5)
+		.justified-gallery > a > img
+			-webkit-transition: -webkit-transform 0.15s ease 0s
+			-moz-transition: -moz-transform 0.15s ease 0s
+			-o-transition: -o-transform 0.15s ease 0s
+			transition: transform 0.15s ease 0s
+			-webkit-transform: scale3d(1, 1, 1)
+			transform: scale3d(1, 1, 1)
+			height: 100%
+			width: 100%
+		.justified-gallery > a:hover > img
+			-webkit-transform: scale3d(1.1, 1.1, 1.1)
+			transform: scale3d(1.1, 1.1, 1.1)
+		.justified-gallery > a:hover .demo-gallery-poster > img
+			opacity: 1
+		.justified-gallery > a .demo-gallery-poster
+			background-color: rgba(0, 0, 0, 0.1)
+			bottom: 0
+			left: 0
+			position: absolute
+			right: 0
+			top: 0
+			-webkit-transition: background-color 0.15s ease 0s
+			-o-transition: background-color 0.15s ease 0s
+			transition: background-color 0.15s ease 0s
+		.justified-gallery > a .demo-gallery-poster > img
+			left: 50%
+			margin-left: -10px
+			margin-top: -10px
+			opacity: 0
+			position: absolute
+			top: 50%
+			-webkit-transition: opacity 0.3s ease 0s
+			-o-transition: opacity 0.3s ease 0s
+			transition: opacity 0.3s ease 0s
+		.justified-gallery > a:hover .demo-gallery-poster
+			background-color: rgba(0, 0, 0, 0.5)
+
+
 
 .hidden
 	display: none
