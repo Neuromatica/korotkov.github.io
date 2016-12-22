@@ -1,9 +1,170 @@
 $c_bg: #1a2434
 $c_tx: #ffffff
 
+
 body
 	background: $c_bg
-	font-family: 'Cuprum', sans-serif;
+	font-family: 'Cuprum', sans-serif
+
+	.socialbar
+		background: #eee
+		position: fixed
+		z-index: 1
+		width: 100%
+		font-family: 'Cuprum', sans-serif
+		-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5); -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5); box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
+		h1
+			margin: 7px
+			font-size: 200%
+			letter-spacing: -3px
+		.col-md-10 
+			#slink
+				border-left: 1px solid #d0dee9
+				a
+					font-size: 132%
+					letter-spacing: 0px
+					i
+						padding-top: 9px
+						font-size: 120%
+
+
+
+	#f1
+		font-family: 'Cuprum', sans-serif
+		background: #eee
+		h1
+			font-size: 300%
+			letter-spacing: 1px
+		h2
+			font-size: 160%
+			letter-spacing: 2px
+			margin-left: 25%
+			margin-right: 25%
+		#f1r1
+			background: #2a5880
+			color: #eee
+			padding-top: 80px; padding-bottom: 60px
+			text-align: center
+
+
+		#f1r2
+			padding-top: 80px; padding-bottom: 60px
+			height: 100%
+			ul
+				li
+					padding-top: 5px; padding-bottom: 5px
+	#f2
+		font-family: 'Cuprum', sans-serif
+		background: #eee
+		.row
+			background: #254560
+			text-align: center
+			font-size: 300%
+			letter-spacing: 1px
+			color: #eee
+			padding-top: 50px; padding-bottom: 10px
+		#f2r1
+			background: #eee
+			#bio
+				background: #fff
+				color: #000
+		#f2r2
+			background: #254560
+			ul
+				text-align: center
+				margin-bottom: 0px
+				padding-left: 15px
+				li
+					margin-bottom: 15px
+					width: 9%
+					display: inline-block
+					margin-right: 15px
+					list-style: outside none none
+					a
+						border: 3px solid #FFF
+						border-radius: 3px
+						display: block
+						overflow: hidden
+						position: relative
+						float: left
+						img
+							-webkit-transition: -webkit-transform 0.15s ease 0s
+							-moz-transition: -moz-transform 0.15s ease 0s
+							-o-transition: -o-transform 0.15s ease 0s
+							transition: transform 0.15s ease 0s
+							-webkit-transform: scale3d(1, 1, 1)
+							transform: scale3d(1, 1, 1)
+							height: 100%
+							width: 100%
+						.demo-gallery-poster
+							background-color: rgba(0, 0, 0, 0.1)
+							bottom: 0
+							left: 0
+							position: absolute
+							right: 0
+							top: 0
+							-webkit-transition: background-color 0.15s ease 0s
+							-o-transition: background-color 0.15s ease 0s
+							transition: background-color 0.15s ease 0s
+						.demo-gallery-poster > img
+							left: 50%
+							margin-left: -10px
+							margin-top: -10px
+							opacity: 0
+							position: absolute
+							top: 50%
+							-webkit-transition: opacity 0.3s ease 0s
+							-o-transition: opacity 0.3s ease 0s
+							transition: opacity 0.3s ease 0s
+							width: 20px
+							height: 20px
+					a:hover > img
+						-webkit-transform: scale3d(1.1, 1.1, 1.1)
+						transform: scale3d(1.1, 1.1, 1.1)
+					a:hover .demo-gallery-poster > img
+						opacity: 1
+					a:hover .demo-gallery-poster
+						background-color: rgba(0, 0, 0, 0.5)
+			.justified-gallery > a > img
+				-webkit-transition: -webkit-transform 0.15s ease 0s
+				-moz-transition: -moz-transform 0.15s ease 0s
+				-o-transition: -o-transform 0.15s ease 0s
+				transition: transform 0.15s ease 0s
+				-webkit-transform: scale3d(1, 1, 1)
+				transform: scale3d(1, 1, 1)
+				height: 100%
+				width: 100%
+			.justified-gallery > a:hover > img
+				-webkit-transform: scale3d(1.1, 1.1, 1.1)
+				transform: scale3d(1.1, 1.1, 1.1)
+			.justified-gallery > a:hover .demo-gallery-poster > img
+				opacity: 1
+			.justified-gallery > a .demo-gallery-poster
+				background-color: rgba(0, 0, 0, 0.1)
+				bottom: 0
+				left: 0
+				position: absolute
+				right: 0
+				top: 0
+				-webkit-transition: background-color 0.15s ease 0s
+				-o-transition: background-color 0.15s ease 0s
+				transition: background-color 0.15s ease 0s
+			.justified-gallery > a .demo-gallery-poster > img
+				left: 50%
+				margin-left: -10px
+				margin-top: -10px
+				opacity: 0
+				position: absolute
+				top: 50%
+				-webkit-transition: opacity 0.3s ease 0s
+				-o-transition: opacity 0.3s ease 0s
+				transition: opacity 0.3s ease 0s
+			.justified-gallery > a:hover .demo-gallery-poster
+				background-color: rgba(0, 0, 0, 0.5)
+
+
+
+
 	header
 		background-image: url("https://raw.githubusercontent.com/Neuromatica/korotkov.github.io/master/img/i_main.JPG")
 		background-repeat: no-repeat
@@ -81,97 +242,7 @@ body
 
 
 
-		ul
-			text-align: center
-			margin-bottom: 0
-			padding-left: 15px
-			li
-				margin-bottom: 15px
-				width: 180px
-				display: inline-block
-				margin-right: 15px
-				list-style: outside none none
-				a
-					border: 3px solid #FFF
-					border-radius: 3px
-					display: block
-					overflow: hidden
-					position: relative
-					float: left
-					img
-						-webkit-transition: -webkit-transform 0.15s ease 0s
-						-moz-transition: -moz-transform 0.15s ease 0s
-						-o-transition: -o-transform 0.15s ease 0s
-						transition: transform 0.15s ease 0s
-						-webkit-transform: scale3d(1, 1, 1)
-						transform: scale3d(1, 1, 1)
-						height: 100%
-						width: 100%
-					.demo-gallery-poster
-						background-color: rgba(0, 0, 0, 0.1)
-						bottom: 0
-						left: 0
-						position: absolute
-						right: 0
-						top: 0
-						-webkit-transition: background-color 0.15s ease 0s
-						-o-transition: background-color 0.15s ease 0s
-						transition: background-color 0.15s ease 0s
-					.demo-gallery-poster > img
-						left: 50%
-						margin-left: -10px
-						margin-top: -10px
-						opacity: 0
-						position: absolute
-						top: 50%
-						-webkit-transition: opacity 0.3s ease 0s
-						-o-transition: opacity 0.3s ease 0s
-						transition: opacity 0.3s ease 0s
-						width: 20px
-						height: 20px
-				a:hover > img
-					-webkit-transform: scale3d(1.1, 1.1, 1.1)
-					transform: scale3d(1.1, 1.1, 1.1)
-				a:hover .demo-gallery-poster > img
-					opacity: 1
-				a:hover .demo-gallery-poster
-					background-color: rgba(0, 0, 0, 0.5)
-		.justified-gallery > a > img
-			-webkit-transition: -webkit-transform 0.15s ease 0s
-			-moz-transition: -moz-transform 0.15s ease 0s
-			-o-transition: -o-transform 0.15s ease 0s
-			transition: transform 0.15s ease 0s
-			-webkit-transform: scale3d(1, 1, 1)
-			transform: scale3d(1, 1, 1)
-			height: 100%
-			width: 100%
-		.justified-gallery > a:hover > img
-			-webkit-transform: scale3d(1.1, 1.1, 1.1)
-			transform: scale3d(1.1, 1.1, 1.1)
-		.justified-gallery > a:hover .demo-gallery-poster > img
-			opacity: 1
-		.justified-gallery > a .demo-gallery-poster
-			background-color: rgba(0, 0, 0, 0.1)
-			bottom: 0
-			left: 0
-			position: absolute
-			right: 0
-			top: 0
-			-webkit-transition: background-color 0.15s ease 0s
-			-o-transition: background-color 0.15s ease 0s
-			transition: background-color 0.15s ease 0s
-		.justified-gallery > a .demo-gallery-poster > img
-			left: 50%
-			margin-left: -10px
-			margin-top: -10px
-			opacity: 0
-			position: absolute
-			top: 50%
-			-webkit-transition: opacity 0.3s ease 0s
-			-o-transition: opacity 0.3s ease 0s
-			transition: opacity 0.3s ease 0s
-		.justified-gallery > a:hover .demo-gallery-poster
-			background-color: rgba(0, 0, 0, 0.5)
+
 
 
 
