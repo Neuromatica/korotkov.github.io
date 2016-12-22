@@ -12,14 +12,24 @@ body {
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5); }
     body .socialbar h1 {
       margin: 7px;
-      font-size: 200%;
-      letter-spacing: -3px; }
-    body .socialbar .col-md-10 #slink {
-      border-left: 1px solid #d0dee9; }
-      body .socialbar .col-md-10 #slink a {
+      font-size: 220%;
+      letter-spacing: -2px; }
+      body .socialbar h1 sm {
+        font-size: 78%;
+        letter-spacing: -1px; }
+    body .socialbar .slinkbar {
+      text-align: right; }
+      body .socialbar .slinkbar .slink {
+        border-left: 1px solid #d0dee9;
+        text-align: right;
         font-size: 132%;
-        letter-spacing: 0px; }
-        body .socialbar .col-md-10 #slink a i {
+        letter-spacing: 0px;
+        padding: 10px; }
+        body .socialbar .slinkbar .slink:hover {
+          transition: .3s;
+          background: #2a5880;
+          color: #eee; }
+        body .socialbar .slinkbar .slink i {
           padding-top: 9px;
           font-size: 120%; }
   body #f1 {
